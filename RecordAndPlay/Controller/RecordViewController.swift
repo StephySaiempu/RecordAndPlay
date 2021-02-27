@@ -233,10 +233,16 @@ extension RecordViewController{
             audioEngine = AVAudioEngine()
         }
         
-        let inputNode = self.audioEngine.inputNode
+        
         guard let format = self.format() else {
             return
         }
+        let inputNode = self.audioEngine.inputNode
+        if(inputNode.inputFormat(forBus: 0).channelCount == 0){
+            print("Not enough available inputs!")
+            return
+        }
+        audioEngine.reset()
         self.filePath = self.getDocumentsDirectory().appendingPathComponent("saregamapa.wav")
         guard let outUrl = self.filePath else { return}
         _ = ExtAudioFileCreateWithURL(outUrl as CFURL,
