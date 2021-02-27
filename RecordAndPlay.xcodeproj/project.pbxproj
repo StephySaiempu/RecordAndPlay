@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BF4C775B25E6A398001C191E /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C775A25E6A398001C191E /* RecordViewController.swift */; };
+		BF566C2125EA92D600E66CB4 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF566C2025EA92D600E66CB4 /* RecordViewController.swift */; };
+		BF566C2625EA930800E66CB4 /* AudioVisualizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF566C2525EA930800E66CB4 /* AudioVisualizerView.swift */; };
 		BF5A45F425E5364C0084AFC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A45F325E5364C0084AFC7 /* AppDelegate.swift */; };
 		BF5A45F625E5364C0084AFC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A45F525E5364C0084AFC7 /* SceneDelegate.swift */; };
-		BF5A45F825E5364C0084AFC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A45F725E5364C0084AFC7 /* ViewController.swift */; };
 		BF5A45FB25E5364C0084AFC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5A45F925E5364C0084AFC7 /* Main.storyboard */; };
 		BF5A45FD25E5364E0084AFC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF5A45FC25E5364E0084AFC7 /* Assets.xcassets */; };
 		BF5A460025E5364E0084AFC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5A45FE25E5364E0084AFC7 /* LaunchScreen.storyboard */; };
@@ -36,11 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BF4C775A25E6A398001C191E /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		BF566C2025EA92D600E66CB4 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		BF566C2525EA930800E66CB4 /* AudioVisualizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioVisualizerView.swift; sourceTree = "<group>"; };
 		BF5A45F025E5364C0084AFC7 /* RecordAndPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecordAndPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5A45F325E5364C0084AFC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF5A45F525E5364C0084AFC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BF5A45F725E5364C0084AFC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BF5A45FA25E5364C0084AFC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF5A45FC25E5364E0084AFC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF5A45FF25E5364E0084AFC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,6 +78,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF566C2A25EAC0EE00E66CB4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF566C2525EA930800E66CB4 /* AudioVisualizerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BF566C3725EAC17A00E66CB4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF566C2025EA92D600E66CB4 /* RecordViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		BF5A45E725E5364C0084AFC7 = {
 			isa = PBXGroup;
 			children = (
@@ -103,8 +119,8 @@
 			children = (
 				BF5A45F325E5364C0084AFC7 /* AppDelegate.swift */,
 				BF5A45F525E5364C0084AFC7 /* SceneDelegate.swift */,
-				BF5A45F725E5364C0084AFC7 /* ViewController.swift */,
-				BF4C775A25E6A398001C191E /* RecordViewController.swift */,
+				BF566C3725EAC17A00E66CB4 /* Controller */,
+				BF566C2A25EAC0EE00E66CB4 /* Views */,
 				BF5A45F925E5364C0084AFC7 /* Main.storyboard */,
 				BF5A45FC25E5364E0084AFC7 /* Assets.xcassets */,
 				BF5A45FE25E5364E0084AFC7 /* LaunchScreen.storyboard */,
@@ -261,10 +277,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF5A45F825E5364C0084AFC7 /* ViewController.swift in Sources */,
+				BF566C2125EA92D600E66CB4 /* RecordViewController.swift in Sources */,
 				BF5A45F425E5364C0084AFC7 /* AppDelegate.swift in Sources */,
+				BF566C2625EA930800E66CB4 /* AudioVisualizerView.swift in Sources */,
 				BF5A45F625E5364C0084AFC7 /* SceneDelegate.swift in Sources */,
-				BF4C775B25E6A398001C191E /* RecordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +459,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V4VJMATRT2;
 				INFOPLIST_FILE = RecordAndPlay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,6 +479,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V4VJMATRT2;
 				INFOPLIST_FILE = RecordAndPlay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
