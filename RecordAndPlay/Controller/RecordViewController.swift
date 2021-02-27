@@ -17,7 +17,6 @@ class RecordViewController: UIViewController{
     var filePath : URL? = nil
     var audioEngine: AVAudioEngine!
     var audioFile : AVAudioFile!
-    var audioPlayer : AVAudioPlayer?
     var audioFilePlayer: AVAudioPlayerNode!
     var isRec = false
     var isPlay = false
@@ -88,7 +87,7 @@ class RecordViewController: UIViewController{
     
     @objc func playButtonTapped(){
         
-        if audioPlayer != nil && audioPlayer?.isPlaying ?? false {
+        if audioFilePlayer != nil && audioFilePlayer?.isPlaying ?? false {
             stopPlay()
         }else{
             startPlay()
